@@ -1,10 +1,10 @@
 # Asif Pinjari
 
-**AI Engineer, Agentic Systems & LLM Infrastructure**
+AI engineer and educator who builds, teaches, scopes, and translates. I ship production AI solutions with Claude and turn non-technical colleagues into confident AI users.
 
-I build the systems that sit between research-grade AI and production: agentic workflows that hold state across multi-step tasks, RAG pipelines that stay accurate under real-world document noise, and the evaluation tooling that makes autonomous agent behavior trustworthy enough to ship. My work spans both ends of that spectrum, from shipping LLM-powered services used by 200+ researchers and faculty, to academic research on agent reliability.
+I have built end-to-end agents, automations, internal tools, evaluation harnesses, and integrations on Claude API, LangChain, and AWS serving 200+ faculty and administrators across a public university, and run trainings for 180+ people, from middle-school summer campers to graduate students to senior faculty. I am energized by ambiguity, resource constraints, and wearing multiple hats, and I exercise judgment to catch wrong answers and push back when something should not be built.
 
-Based in Arizona. M.S. Computer Science, Northern Arizona University (3.9 GPA). IEEE-published author, PyPI package author, AWS Certified AI Practitioner.
+Anthropic AI Fluency and Claude 101 certified · AWS dual-certified · IEEE-published researcher · PyPI open-source author · M.S. Computer Science, NAU (3.9 GPA)
 
 [Portfolio](https://asifflix.vercel.app) · [LinkedIn](https://linkedin.com/in/asifp0209) · asifp0203@gmail.com
 
@@ -12,61 +12,64 @@ Based in Arizona. M.S. Computer Science, Northern Arizona University (3.9 GPA). 
 
 ## What I work on
 
-**Agentic systems.** Multi-agent orchestration where agents need to coordinate, hold shared state, and recover from failure, not just chain prompts. I care about the boundary conditions: what happens when an agent gets bad tool output, when a task needs to be re-planned mid-execution, or when one agent's output has to be trusted (or not) by another.
+**Building with Claude.** Agents, automations, and internal tools on the Claude API and Anthropic SDK: MCP, tool use, structured outputs, and agentic workflows that non-technical people can actually operate after handoff.
 
-**RAG and retrieval at production scale.** Less interested in whether a demo answers one question correctly, and more in retrieval quality under real document noise, cost per query at scale, and where semantic search quietly fails.
+**Agentic systems and evaluation.** Multi-agent orchestration with LangChain and LangGraph, plus the evaluation harnesses (LLM-as-Judge, RAGAS, LangSmith) that turn "did the AI work?" into concrete metrics stakeholders trust.
 
-**Agent evaluation.** Building benchmarks and evaluation harnesses that test agent behavior systematically rather than relying on a handful of manual spot checks.
+**RAG that stays grounded.** Retrieval pipelines with inline citations and judgment layers that refuse low-confidence answers and flag policy-sensitive questions for human review.
 
-**Token and cost efficiency.** Context pruning, prompt compression, and inference cost optimization. The unglamorous engineering work that decides whether an agentic system is actually deployable, or just a cool demo with a five-figure monthly API bill.
+**AI enablement.** Runbooks, onboarding guides, and training sessions that turn colleagues into the AI go-to people on their teams.
 
 ---
 
 ## Experience
 
-**AI/ML Engineer, Northern Arizona University** *(Jan 2025 – Present)*
-Design and deploy production AI systems for research teams across three departments: LLM applications on AWS Bedrock via LangChain, agentic workflows, and RAG pipelines for semantic search and document QA. Built end-to-end ML pipelines (ingestion, feature engineering, training, validation, packaging) that improved model accuracy by 30%, and FastAPI/Docker inference services that turned prototypes into deployed systems on AWS and GCP. Integrated LLM-powered analytics into enterprise campus systems, cutting manual data-gathering time by 40% for 200+ faculty and administrators.
+**AI/ML Engineer — Northern Arizona University** *(Jan 2025 – Present)*
+Built and deployed agents, automations, internal tools, and integrations on Claude API + LangChain + AWS, including RAG pipelines, LLM-powered dashboards, and agentic workflows used by 200+ faculty and administrators. Improved model accuracy ~30% and reduced token usage ~40% through prompt engineering, retrieval tuning, and selective model routing.
 
-**Research Assistant, AI Agents & Deep Learning, Northern Arizona University** *(Feb 2026 – Present)*
-Building benchmark datasets and detection models for studying agent reliability under adversarial conditions, in collaboration with faculty advisors toward peer-reviewed publication. Includes designing a large-scale automated data generation pipeline on NAU's Monsoon HPC cluster and a transformer-based model for trajectory-level analysis.
+**Research Assistant, AI Agents & Deep Learning — NAU** *(Feb 2026 – Present)*
+Applied research on observability and anomaly detection in multi-agent AI communication systems; preparing peer-reviewed publication on agentic AI observability and self-refinement patterns.
 
-**Teaching Assistant, Python & Deep Learning, Northern Arizona University** *(Feb 2026 – Present)*
-Guide 100+ graduate students through implementing CNNs, RNNs, LSTMs, and Transformers in PyTorch and TensorFlow, including deployment to GCP. Mentor on software engineering standards, Git workflow, and reproducible ML experimentation.
-
-**Smart Automation ML Engineer, Vincon Reality Pvt. Ltd.** *(Sep 2022 – May 2024)*
-Built production intelligent-automation systems combining ML models (TensorFlow, XGBoost) with IoT device control, improving automation efficiency by 40%. Optimized models with TensorFlow Lite for edge deployment, hitting sub-50ms real-time inference across 10+ smart-home products.
+**Teaching — NAU** *(Jan 2025 – Present)*
+TA for Python & Deep Learning (100+ grad students) and Advanced Python (80+ grad students); Semester Zero peer mentor teaching responsible AI use to middle-school students.
 
 ---
 
-## Publications & Credentials
+## Projects
 
-**Human Activity Recognition, CNN+LSTM** · [IEEE InC4 2024](https://ieeexplore.ieee.org/document/10649335)
-Designed a CNN+LSTM architecture to classify 15 human activities from time-series sensor data, reaching 92% accuracy on 1.2M+ sensor readings. Trained with PyTorch and GPU acceleration, using GridSearchCV for hyperparameter tuning.
+**EthicAI — Classroom AI Literacy Toolkit for K-12 Educators**
+Prompt-coaching assistant, AI-output verifier, and teacher dashboard with guardrails via system prompts, Pydantic structured outputs, and content filtering. 96% appropriate-refusal rate across 200+ test prompts. Claude API, LangChain, Streamlit.
 
-**Open source:** [smart-preprocess-asif](https://github.com/Asif-0209/smart-preprocess-asif), a one-line data preprocessing toolkit published on PyPI.
+**OfficeHours — Internal AI Assistant for University Workflows**
+RAG pipeline (Amazon Bedrock embeddings + FAISS) grounding every response in verified institutional documents with inline citations, plus a judgment layer that refuses low-confidence answers. 92% accuracy on a 150-question test set; serves 200+ users. Claude API, Bedrock, LangChain.
 
-**Certification:** AWS Certified AI Practitioner.
+**[smart-preprocess](https://pypi.org/project/smart-preprocess-asif/)** · `pip install smart-preprocess-asif`
+Open-source PyPI library automating ML data preprocessing. Built and maintained solo with versioned, CI-driven releases.
+
+**Human Activity Recognition (CNN+LSTM)** · [IEEE InC4 2024](https://ieeexplore.ieee.org/document/10649335)
+92% accuracy classifying 15 human activities from 1.2M+ sensor readings; published conference paper.
 
 ---
 
 ## Stack
 
-**LLM / GenAI**
-- LangChain, LlamaIndex, Amazon Bedrock, Claude API, OpenAI API, Hugging Face
-- RAG, FAISS, embeddings, semantic search, LoRA/PEFT fine-tuning
+**Build with Claude**
+- Claude API, Anthropic SDK, Claude Code
+- MCP (Model Context Protocol), Tool Use, Structured Outputs, Agentic Workflows
 
-**Agentic AI**
-- Multi-agent orchestration, Model Context Protocol (MCP), LLM-as-judge
-- Agent observability, tool use, n8n, Zapier
+**Agentic AI & LLMs**
+- LangChain, LangGraph, Multi-Agent Systems, Agent Orchestration, ReAct
+- RAG Pipelines, FAISS, Pinecone, Hugging Face, Amazon Bedrock
+- LLM Evaluation, LLM-as-Judge, RAGAS, LangSmith, Agent Observability
 
 **ML / Deep Learning**
 - PyTorch, TensorFlow, Scikit-learn, XGBoost
-- CNNs, RNNs, LSTMs, Transformers, NLP, computer vision
+- CNNs, LSTMs, Transformers, NLP, Fine-Tuning (LoRA)
 
-**Data & Infra**
-- Pandas, NumPy, Apache Spark, PostgreSQL, MongoDB
-- AWS (Lambda, SageMaker, Bedrock, EC2, API Gateway), GCP
-- Docker, Kubernetes, Terraform, MLflow, GitHub Actions
+**Cloud & Deployment**
+- AWS (Lambda, S3, EC2, API Gateway, Bedrock, SageMaker, EKS), GCP
+- Docker, Kubernetes, Serverless, CI/CD, GitHub Actions
 
-**Languages**
-- Python, SQL, JavaScript, Bash
+**Languages & Data**
+- Python (Advanced, OOP), SQL, JavaScript, Bash
+- Pandas, NumPy, PySpark, PostgreSQL, MongoDB, FastAPI, Pydantic
